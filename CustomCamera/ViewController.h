@@ -7,9 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Recorder.h"
+#import "RecordManager.h"
+@class Recorder;
 @interface ViewController : UIViewController
+@property (nonatomic,retain) RecordManager* recordManager;
+@property (weak, nonatomic) IBOutlet UIView *videoPreviewView;
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *recordButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *cameraToggleButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *stillButton;
 
+- (IBAction)toggleRecording:(id)sender;
+- (IBAction)toggleCamera:(id)sender;
+- (IBAction)captureStillImage:(id)sender;
 @end
 

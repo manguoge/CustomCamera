@@ -13,6 +13,9 @@
 		FB26AF3E1D5B24420015E380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB26AF3C1D5B24420015E380 /* Main.storyboard */; };
 		FB26AF401D5B24420015E380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB26AF3F1D5B24420015E380 /* Assets.xcassets */; };
 		FB26AF431D5B24420015E380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB26AF411D5B24420015E380 /* LaunchScreen.storyboard */; };
+		FB26AF4C1D5B25210015E380 /* Recorder.m in Sources */ = {isa = PBXBuildFile; fileRef = FB26AF4B1D5B25210015E380 /* Recorder.m */; };
+		FB26AF4F1D5B25350015E380 /* RecordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FB26AF4E1D5B25350015E380 /* RecordManager.m */; };
+		FB26AF521D5B74DD0015E380 /* RecordUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FB26AF511D5B74DD0015E380 /* RecordUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		FB26AF3F1D5B24420015E380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB26AF421D5B24420015E380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB26AF441D5B24420015E380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB26AF4A1D5B25210015E380 /* Recorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recorder.h; sourceTree = "<group>"; };
+		FB26AF4B1D5B25210015E380 /* Recorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recorder.m; sourceTree = "<group>"; };
+		FB26AF4D1D5B25350015E380 /* RecordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordManager.h; sourceTree = "<group>"; };
+		FB26AF4E1D5B25350015E380 /* RecordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordManager.m; sourceTree = "<group>"; };
+		FB26AF501D5B74DD0015E380 /* RecordUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordUtils.h; sourceTree = "<group>"; };
+		FB26AF511D5B74DD0015E380 /* RecordUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,12 @@
 				FB26AF371D5B24420015E380 /* AppDelegate.m */,
 				FB26AF391D5B24420015E380 /* ViewController.h */,
 				FB26AF3A1D5B24420015E380 /* ViewController.m */,
+				FB26AF4D1D5B25350015E380 /* RecordManager.h */,
+				FB26AF4E1D5B25350015E380 /* RecordManager.m */,
+				FB26AF4A1D5B25210015E380 /* Recorder.h */,
+				FB26AF4B1D5B25210015E380 /* Recorder.m */,
+				FB26AF501D5B74DD0015E380 /* RecordUtils.h */,
+				FB26AF511D5B74DD0015E380 /* RecordUtils.m */,
 				FB26AF3C1D5B24420015E380 /* Main.storyboard */,
 				FB26AF3F1D5B24420015E380 /* Assets.xcassets */,
 				FB26AF411D5B24420015E380 /* LaunchScreen.storyboard */,
@@ -110,6 +125,7 @@
 				TargetAttributes = {
 					FB26AF2F1D5B24420015E380 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = W95B5QABWP;
 					};
 				};
 			};
@@ -149,9 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB26AF521D5B74DD0015E380 /* RecordUtils.m in Sources */,
 				FB26AF3B1D5B24420015E380 /* ViewController.m in Sources */,
 				FB26AF381D5B24420015E380 /* AppDelegate.m in Sources */,
 				FB26AF351D5B24420015E380 /* main.m in Sources */,
+				FB26AF4F1D5B25350015E380 /* RecordManager.m in Sources */,
+				FB26AF4C1D5B25210015E380 /* Recorder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +233,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -252,7 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -263,10 +282,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CustomCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hitszcerc.CustomCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -274,10 +297,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CustomCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hitszcerc.CustomCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -300,6 +327,7 @@
 				FB26AF491D5B24420015E380 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
