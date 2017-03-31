@@ -1,0 +1,3 @@
+# CustomCamera
+
+使用AVFoundation框架下的AVCaptureDevice,AVCaptureSession,AVCaptureDeviceInput,AVCaptureDeviceOutput,AVCaptureVideoPreViewLayer等<br>开发自定义的相机，不同于UIImagePickerController控制器开发的固定界面和功能的相机。
