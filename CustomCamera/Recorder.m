@@ -63,6 +63,7 @@ AVMediaTypeVideo fromConnections:[[self movieFileOutput] connections]];
      self.outputFileURL recordingDelegate:self];
 }
 // 停止录制
+
 -(void)stopRecording
 {
     [self.movieFileOutput stopRecording];

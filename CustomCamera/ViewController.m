@@ -15,26 +15,6 @@ static void* AVCamFocusModeObserverContext=&AVCamFocusModeObserverContext;
 @implementation ViewController
 AVCaptureVideoPreviewLayer* previewLayer;
 UILabel* focusModeLabel;
-//定义一个方法，将对焦模式转换为字符串
--(NSString*)stringForFoucsMode:(AVCaptureFocusMode)focusMode
-{
-    NSString* focusString=@"";
-    switch (focusMode)
-    {
-        case AVCaptureFocusModeLocked:
-            focusString=@"锁定";
-            break;
-        case AVCaptureFocusModeAutoFocus:
-            focusString=@"自动对焦";
-            break;
-        case AVCaptureFocusModeContinuousAutoFocus:
-            focusString=@"连续对焦";
-            break;
-        default:
-            break;
-    }
-    return focusString;
-}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -85,6 +65,26 @@ UILabel* focusModeLabel;
             [self.videoPreviewView addGestureRecognizer:doubleTap];
         }
     }
+}
+//定义一个方法，将对焦模式转换为字符串
+-(NSString*)stringForFoucsMode:(AVCaptureFocusMode)focusMode
+{
+    NSString* focusString=@"";
+    switch (focusMode)
+    {
+        case AVCaptureFocusModeLocked:
+            focusString=@"锁定";
+            break;
+        case AVCaptureFocusModeAutoFocus:
+            focusString=@"自动对焦";
+            break;
+        case AVCaptureFocusModeContinuousAutoFocus:
+            focusString=@"连续对焦";
+            break;
+        default:
+            break;
+    }
+    return focusString;
 }
 
 //监听对焦方式改变的方法
